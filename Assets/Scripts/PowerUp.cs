@@ -28,6 +28,7 @@ public class PowerUp : MonoBehaviour
         //Destroy(gameObject);
         sr.enabled = false; //turns sprite off
         effectsApplied = true;
+        GetComponent<Collider2D>().enabled = false;
 
 
     }

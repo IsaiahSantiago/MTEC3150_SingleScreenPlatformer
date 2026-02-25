@@ -16,8 +16,8 @@ public class PU_Agility : PowerUp
 
     protected override void NegateEffect()
     {
-        Player.jumpSpeed = 4;
-        Player.movementSpeed = 100;
+        Player.jumpSpeed -= 4;
+        Player.movementSpeed -= 100;
 
         //Player.jumpSpeed = Player.jumpSpeed - 4;
         //Player.movementSpeed = Player.movementSpeed - 100;
