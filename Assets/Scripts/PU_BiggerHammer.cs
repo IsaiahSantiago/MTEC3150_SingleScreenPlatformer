@@ -83,20 +83,39 @@ public class PU_BiggerHammer : PowerUp
         }
 
 
-            //Debug.Log("Larger Hammer activated");
+    private void MeleeAttack()
+    {
+       // //adding an audio source:
+       // //audioSource.PlayOneShot(attackClip);
+
+       // Player.biggerMelee.SetActive(true);
+       // //set inactive when given a power up
+       // Player.biggerMelee.transform.localPosition = new Vector3(AttackOffset * facingDirection, meleeAttack.transform.localPosition.y, 0);
+
+       // Player.meleeTriggered = true;
+
+       // //flips melee sprite
+       //Player.biggerMelee.flipX = sr.flipX;
+
+    MeleeAttack();
 
 
-        //}
+
+    }
+    //Debug.Log("Larger Hammer activated");
+
+
+    //}
 
 
 
-        //}
+    //}
 
 
     protected override void NegateEffect()
     {
         base.NegateEffect();
-        Player.meleeAttack.SetActive(true);
+        Player.biggerMelee.SetActive(false);
 
 
 
