@@ -74,7 +74,7 @@ public class PlayerController : MonoBehaviour
             audioSource.PlayOneShot(jumpClip);
 
             jumpFlag = true;
-              anim.SetTrigger("Jump");
+              anim.SetTrigger("Jumping");
             jumpFlag = true;
 
         }
@@ -137,6 +137,8 @@ public class PlayerController : MonoBehaviour
             if (timeElapsedSinceMelee < meleeDuration)
             {
                 timeElapsedSinceMelee += Time.deltaTime;
+                anim.SetBool("Attacking", false);
+
             }
             else 
             {
