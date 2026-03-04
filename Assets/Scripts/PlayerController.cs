@@ -16,7 +16,7 @@ public class PlayerController : MonoBehaviour
 
     public LayerMask ground;
     public GameObject meleeAttack;
-    public GameObject BiggerMelee;
+    public GameObject biggerMelee;
 
     private float facingDirection;
     
@@ -36,6 +36,8 @@ public class PlayerController : MonoBehaviour
 
     private SpriteRenderer sr;
     private SpriteRenderer meleeSR;
+    public SpriteRenderer biggerM;
+
     private Animator anim;
 
     public AudioClip jumpClip, attackClip, landingClip;
@@ -52,6 +54,8 @@ public class PlayerController : MonoBehaviour
         sr = GetComponentInChildren<SpriteRenderer>();
         anim = GetComponent<Animator>();
         meleeSR = meleeAttack.GetComponent<SpriteRenderer>();
+        biggerM = biggerMelee.GetComponent<SpriteRenderer>();
+
 
         audioSource = GetComponentInChildren<AudioSource>();
 
