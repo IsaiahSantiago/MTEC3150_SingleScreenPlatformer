@@ -40,25 +40,47 @@ public class PU_BiggerHammer : PowerUp
 
         //    }
 
+        Player.meleeAttack.SetActive(false);
 
-    //    MeleeAttack()
-    //{
-    //    //adding an audio source:
-    //    //audioSource.PlayOneShot(attackClip);
-
-    //    meleeAttack.SetActive(true);
-    //    //set inactive when given a power up
-    //    meleeAttack.transform.localPosition = new Vector3(AttackOffset * facingDirection, meleeAttack.transform.localPosition.y, 0);
-
-    //    meleeTriggered = true;
-
-    //    //flips melee sprite
-    //    meleeSR.flipX = sr.flipX;
+        Player.biggerMelee.SetActive(true);
 
 
 
+        //if (PU_BiggerHammer = true)
+        //    {
+        //    Player.meleeAttack.SetActive(false);
 
-    }
+        //    if (timeElapsedSinceMelee < meleeDuration)
+        //        {
+        //            timeElapsedSinceMelee += Time.deltaTime;
+        //        }
+        //        else
+        //        {
+        //            Player.biggerMelee.SetActive(false);
+        //            Player.timeElapsedSinceMelee = 0;
+        //            Player.meleeTriggered = false;
+        //        }
+        //    }
+
+
+            //    MeleeAttack()
+            //{
+            //    //adding an audio source:
+            //    //audioSource.PlayOneShot(attackClip);
+
+            //    meleeAttack.SetActive(true);
+            //    //set inactive when given a power up
+            //    meleeAttack.transform.localPosition = new Vector3(AttackOffset * facingDirection, meleeAttack.transform.localPosition.y, 0);
+
+            //    meleeTriggered = true;
+
+            //    //flips melee sprite
+            //    meleeSR.flipX = sr.flipX;
+
+
+
+
+        }
 
 
             //Debug.Log("Larger Hammer activated");
@@ -68,12 +90,13 @@ public class PU_BiggerHammer : PowerUp
 
 
 
-    //}
+        //}
 
 
     protected override void NegateEffect()
     {
-        //base.NegateEffect();
+        base.NegateEffect();
+        Player.meleeAttack.SetActive(true);
 
 
 
