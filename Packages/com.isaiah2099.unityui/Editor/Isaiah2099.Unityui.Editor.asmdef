@@ -1,0 +1,10 @@
+{
+    "name": "Isaiah2099.Unityui.Editor",
+    "references": [
+      "Isaiah2099.Unityui"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": []
+}

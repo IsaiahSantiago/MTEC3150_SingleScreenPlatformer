@@ -1,5 +1,13 @@
 {
   "dependencies": {
+    "com.isaiah2099.unityui": {
+      "version": "file:com.isaiah2099.unityui",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "com.unity.test-framework": "1.6.0"
+      }
+    },
     "com.unity.2d.animation": {
       "version": "13.0.2",
       "depth": 1,

@@ -1,0 +1,14 @@
+{
+    "name": "Isaiah2099.Unityui.Editor.Tests",
+    "references": [
+        "Isaiah2099.Unityui.Editor",
+        "Isaiah2099.Unityui"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": []
+}

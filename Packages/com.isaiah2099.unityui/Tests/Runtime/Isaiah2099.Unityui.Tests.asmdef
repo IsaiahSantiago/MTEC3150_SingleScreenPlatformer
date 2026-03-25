@@ -1,0 +1,11 @@
+{
+    "name": "Isaiah2099.Unityui.Tests",
+    "references": [
+        "Isaiah2099.Unityui"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": []
+}
